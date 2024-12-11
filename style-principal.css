@@ -4,13 +4,29 @@ nav {
     justify-content: space-around;
 }
 
-.foto-header {
-    width: 60vw;
-    margin: 30px;
-    margin-top: 20px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 20px 2px #000;
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE e Edge */
 }
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Edge */
+}
+
+
+.foto-header {
+    width: 100vw; /* A largura ocupa toda a viewport */
+    box-sizing: border-box; /* Inclui padding/bordas no cálculo de largura */
+    position: relative; /* Mantém a posição padrão, ou remova completamente esta linha */
+    margin: 0; /* Remove quaisquer margens que possam empurrar a imagem */
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 
 header {
     display: flex;
@@ -21,6 +37,7 @@ header {
 h1 {
     text-align: center;
     justify-self: center;
+    margin-top: 15px;
 }
 
 h2, .nome-dalva {
@@ -34,4 +51,23 @@ h2, .nome-dalva {
 .biografia-dalva {
     width: 80vw;
     margin: auto;
+}
+
+
+nav {
+    width: 100vw;
+    background-color: #095509;
+    padding-block: 10px;
+    height: 20px;
+}
+
+.nav-button {
+    all: unset;
+    background-color: #ffffff;
+    border: 4px solid grey;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 16px;
+    height: fit-content;
+    margin: 20px;
 }
