@@ -1,88 +1,88 @@
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 70px;
 }
 
 html {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge */
 }
 
 html::-webkit-scrollbar {
-    display: none; /* Chrome, Safari e Edge */
+  display: none; /* Chrome, Safari e Edge */
 }
-
 
 .foto-header {
-    width: 100vw; /* A largura ocupa toda a viewport */
-    box-sizing: border-box; /* Inclui padding/bordas no cálculo de largura */
-    position: relative; /* Mantém a posição padrão, ou remova completamente esta linha */
-    margin: 0; /* Remove quaisquer margens que possam empurrar a imagem */
-    padding: 0;
+  width: 100vw; /* A largura ocupa toda a viewport */
+  box-sizing: border-box; /* Inclui padding/bordas no cálculo de largura */
+  position: relative; /* Mantém a posição padrão, ou remova completamente esta linha */
+  margin: 0; /* Remove quaisquer margens que possam empurrar a imagem */
+  padding: 0;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-    text-align: center;
-    justify-self: center;
-    margin-top: 15px;
+  text-align: center;
+  justify-self: center;
+  margin-top: 15px;
 }
 
-h2, .nome-dalva {
-    text-align: center;
+h2,
+.nome-dalva {
+  text-align: center;
 }
 
 .nome-dalva {
-    text-decoration: underline solid #343434;
+  text-decoration: underline solid #343434;
 }
 
 .biografia-dalva {
-    width: 80vw;
-    margin: auto;
+  width: 80vw;
+  margin: auto;
+  padding: 20px;
 }
 
-
 nav {
-    width: 100vw;
-    background-color: #095509;
-    padding-block: 10px;
-    height: 25px;
+  width: 100vw;
+  background-color: #095509;
+  padding-block: 10px;
+  height: 25px;
 }
 
 .nav-button {
-    all: unset;
-    background-color: #ffffff;
-    border: 4px solid grey;
-    border-radius: 25px;
-    font-size: 20px;
-    padding: 16px;
-    height: fit-content;
-    margin-top: -18px;
-    margin-inline: 20px;
-    margin-bottom: 20px;
-    z-index: 2;
-    transition: all .3s;
+  all: unset;
+  background-color: #ffffff;
+  border: 4px solid grey;
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 16px;
+  height: fit-content;
+  margin-top: -18px;
+  margin-inline: 20px;
+  margin-bottom: 20px;
+  z-index: 2;
+  transition: all 0.3s;
 }
 
 .nav-button:hover {
-    box-shadow: 0px 5px 20px 4px rgb(0, 0, 0);
+  box-shadow: 0px 5px 20px 4px rgb(0, 0, 0);
 }
 
 nav button:focus {
-    background-color: grey;
-    color: white;
-    outline: none;
-  }
+  background-color: grey;
+  color: white;
+  outline: none;
+}
